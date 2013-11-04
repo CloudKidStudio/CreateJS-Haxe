@@ -11,6 +11,7 @@ extern class SoundInstance extends EventDispatcher
 	public function getVolume():Float;
 	//public function mute(value:Bool):Bool;
 	public function pause():Bool;
+	public function beginPlaying(offset:Float, loop:Int, volume:Float, pan:Float):SoundInstance;
 	public function play(?interrupt:String = Sound.INTERRUPT_NONE, ?delay:Int = 0, ?offset:Int = 0, ?loop:Int = 0, ?volume:Float = 1, ?pan:Float = 0):Void;
 	public function resume():Bool;
 	public function setMute(value:Bool):Bool;
